@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Bakemono Stereo Trial';
+    src: url('BakemonoStereoTrial-Light.woff2') format('woff2'),
+        url('BakemonoStereoTrial-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bakemono Stereo Trial';
+    src: url('BakemonoStereoTrial-Bold.woff2') format('woff2'),
+        url('BakemonoStereoTrial-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bakemono Stereo Trial';
+    src: url('BakemonoStereoTrial-Medium.woff2') format('woff2'),
+        url('BakemonoStereoTrial-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bakemono Stereo Trial ExLight';
+    src: url('BakemonoStereoTrial-ExtraLight.woff2') format('woff2'),
+        url('BakemonoStereoTrial-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bakemono Stereo Trial';
+    src: url('BakemonoStereoTrial-Extrabold.woff2') format('woff2'),
+        url('BakemonoStereoTrial-Extrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bakemono Stereo Trial';
+    src: url('BakemonoStereoTrial-Thin.woff2') format('woff2'),
+        url('BakemonoStereoTrial-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bakemono Stereo Trial';
+    src: url('BakemonoStereoTrial-Regular.woff2') format('woff2'),
+        url('BakemonoStereoTrial-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
