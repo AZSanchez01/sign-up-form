@@ -1,0 +1,26 @@
+:root {
+    --accent-color: lightcoral;
+}
+
+html, body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.banner {
+    background: url("./img/flcl-banner.webp") black repeat;
+    background-size: contain;
+    width: 500px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section {
+    flex: 1;
+    border: 1px solid gray;
+    padding: 0 5rem;
+}
