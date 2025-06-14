@@ -16,7 +16,8 @@
 }
 
 :root {
-    --accent-color: lightcoral;
+    --color-accent: #0288c6;
+    --color-background: #ffd2a9;
     --color-primary:;
     --color-secondary:;
     --color-success;
@@ -30,9 +31,18 @@
     --min-content-width: 25ch;
     --content-line-height: 1.7;
 
-    --font-size-header: 2rem;
-    --font-size-subheader: 1.7rem;
+    --font-size-header: 3rem;
+    --font-size-subheader: 1.5rem;
     --font-size-base: 1rem;
+    --font-size-small: 0.7rem;
+    --line-height-base: 1.7;
+    --letter-spacing-tight: -0.01rem;
+
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xlg: 5rem;
+    
 }
 
 body {
@@ -43,24 +53,37 @@ body {
     font-family: 'Bakemono Stereo Trial';
 }
 
+/*SIDE BANNER SECTION*/
 .banner {
     background: url("./img/flcl-banner.webp") black repeat;
     background-size: contain;
     width: clamp(50px, calc(30px + 20vw),300px)
 }
-main {
+
+/*MAIN GENERAL SECTIONS*/
+main, section {
     flex: 1;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    font-size: var(--font-size-base);
+    
 }
 section {
-    flex: 1;
     border: 1px solid gray;
     padding: 0 clamp(1rem, 1rem + 5vw, 5rem);
+    background: var(--color-background);
 }
 p {
-    width: clamp(var(--min-content-width), var(--min-content-width) + 10vw, var(--max-content-width));
+    max-width: var(--max-content-width);
+    min-width: var(--min-content-width);
     line-height: var(--content-line-height);
 }
 
+/* HERO HEADER SECTION*/
+.hero-header {
+    font-size: var(--font-size-header);
+    margin-top: var(--spacing-xlg);
+}
+
+/*FORMS SECTION*/
