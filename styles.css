@@ -20,8 +20,8 @@
     --color-background: #ffd2a9;
     --color-primary:;
     --color-secondary:;
-    --color-success;
-    --color-error:;
+    --color-success: green;
+    --color-error: #e23c40;
     
     --font-heading: 'Bakemono Stereo Trial';
     --font-base: 'Bakemono Stereo Trial';
@@ -32,9 +32,9 @@
     --content-line-height: 1.7;
 
     --font-size-header: 3rem;
-    --font-size-subheader: 1.5rem;
+    --font-size-subheader: 1.8rem;
     --font-size-base: 1rem;
-    --font-size-small: 0.7rem;
+    --font-size-small: 0.6rem;
     --line-height-base: 1.7;
     --letter-spacing-tight: -0.01rem;
 
@@ -65,14 +65,12 @@ main, section {
     flex: 1;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
     font-size: var(--font-size-base);
+    background: var(--color-background);
     
 }
 section {
-    border: 1px solid gray;
     padding: 0 clamp(1rem, 1rem + 5vw, 5rem);
-    background: var(--color-background);
 }
 p {
     max-width: var(--max-content-width);
@@ -87,3 +85,61 @@ p {
 }
 
 /*FORMS SECTION*/
+.form-section {
+    background: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+    border: 1px solid gray;
+}
+legend {
+    font-size: var(--font-size-subheader);
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg) 0;
+}
+form > div {
+    display: flex;  
+    flex-flow: row wrap;    
+    gap: var(--spacing-xlg);
+}
+form > div > div {
+    flex: 1;
+}
+
+.inp-field {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+form label {
+    font-size: var(--font-size-small);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--color-accent);
+    box-shadow: 0 0.1rem 0.2rem gray;
+}
+input:invalid:not(:placeholder-shown) {
+    outline: none;
+    border: 1px solid var(--color-error);
+}
+
+input[type="submit"] {
+    background: var(--color-accent);
+    color: white;
+    font-weight: bold;
+    font-size: var(--font-size-base);
+    max-width: 100px;
+    border-radius: 3px;
+    outline: none;
+    font-family: 'Bakemono Stereo Trial';
+}
+input:validnot(:placeholder-shown) {
+    outline: none;
+    border: 1px solid var(--color-success);
+}
