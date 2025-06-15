@@ -133,11 +133,12 @@ input[type="submit"] {
     background: var(--color-accent);
     color: white;
     font-weight: bold;
-    font-size: var(--font-size-base);
-    max-width: 100px;
+    font-size: var(--font-size-base) - 0.1rem;
     border-radius: 3px;
     outline: none;
     font-family: 'Bakemono Stereo Trial';
+    align-self: flex-start;
+    padding: 0.3rem 1rem;
 }
 input:validnot(:placeholder-shown) {
     outline: none;
